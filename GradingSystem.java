@@ -21,19 +21,39 @@ public class GradingSystem  {
         score3 = reader.nextInt();
 
         average = (score1+score2+score3)/3;
-        if (average<=100 && average>=90)
+        if (average<=100 && average>=93)
             {
             grade = 'A';
             }
-        else if (average<=89 && average>=80)
+       else if (average<=92 && average>=90)
+            {
+            grade = 'A-';
+            }
+       else if (average<=89 && average>=87)
+            {
+            grade = 'B+';
+            }
+        else if (average<=86 && average>=83)
             {
             grade = 'B';
             }
-        else if (average<=79 && average>=70)
+        else if (average<=82 && average>=80)
+            {
+            grade = 'B-';
+            }
+       else if (average<=79 && average>=77)
+            {
+            grade = 'C+';
+            }
+       else if (average<=76 && average>=73)
             {
             grade = 'C';
             }
-        else if (average<=69 && average>=60)
+       else if (average<=72 && average>=70)
+            {
+            grade = 'C-';
+            }
+        else if (average<=69 && average>=65)
             {
             grade = 'D';
             }
@@ -42,6 +62,6 @@ public class GradingSystem  {
             grade = 'F';
             }
 
-        System.out.println("You have accquired the grade"+grade);
+        System.out.println("Your average from these three tests is: "+grade);
    }
 }
